@@ -1,5 +1,5 @@
-# Py_ber-Analysis
+# PY_BER RIDE SHARING APP ANALYSIS
 ## SUMMARY
-### Background
-analyze all the rideshare data from January to early May of 2019 and create a compelling visualization for the CEO, V. Isualize
-the analytical work must be comprehensive and correct
+#### Background
+The CEO of PyBer, which runs a ride sharing app, has asked the data analysts to create visualizations of ride share data in order to be able to see where the company can improve access to ride-sharing services and determine affordability for undersrerved neighborhoods.  
+
