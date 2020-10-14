@@ -14,5 +14,8 @@ The city data includes the number of drivers per city and type of city, broken d
 The two data files are first combined into one dataframe with the merge variable being the city.  This allows us to count the number of rides per city and driver counts per city, and total fares collecter per city as well as divide them into the city type.  When we have the total fare and the number of drivers in each city, we can then calculate the average are per driver by city and then overall by city type.  After dividing the data into three separate dataframes for the type of city, we can use them to do calculations separately for each type. + For example, to calcualte the average fare per driver in the urban areas we use the following script:
   
 `urban_avg_fare_per_driver = urban_cities_df.groupby(["city"]).sum()["fare"]/urban_cities_df.groupby(["city"]).sum()["driver_count"]`
-
+  
+  Once these calculations have been completed by type of city, we can then combine all the statistics back into one dataframe to show the summary to the PyBer executives.  The final result is as follows:
+  
+![alt text](image.jpg)
   
