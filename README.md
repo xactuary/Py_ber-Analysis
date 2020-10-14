@@ -19,3 +19,5 @@ The two data files are first combined into one dataframe with the merge variable
   
 ![](https://github.com/xactuary/Py_ber-Analysis/blob/main/Resources/Summary%20DF.PNG)
   
+This table shows that there are significantly fewer rides and drivers in the Rural areas bu thte average fare per ride and fare per Driver is significantly higher than in the Suburban and Urban settings.  However, the urban area has much higher revenue due to these significantly higher number of rides provided.  We can examine the monthly revenue stream broken down by the city types in the following graph:
+
