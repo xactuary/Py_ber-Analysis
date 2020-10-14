@@ -17,5 +17,5 @@ The two data files are first combined into one dataframe with the merge variable
   
   Once these calculations have been completed by type of city, we can then combine all the statistics back into one dataframe to show the summary to the PyBer executives.  The final result is as follows:
   
-![alt text](image.jpg)
+![](https://github.com/xactuary/Py_ber-Analysis/blob/main/Resources/Summary%20DF.PNG)
   
