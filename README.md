@@ -13,7 +13,7 @@ The city data includes the number of drivers per city and type of city, broken d
 ## ANALYSIS
 The two data files are first combined into one dataframe with the merge variable being the city.  This allows us to count the number of rides per city and driver counts per city, and total fares collecter per city as well as divide them into the city type.  When we have the total fare and the number of drivers in each city, we can then calculate the average are per driver by city and then overall by city type.  After dividing the data into three separate dataframes for the type of city, we can use them to do calculations separately for each type. + For example, to calcualte the average fare per driver in the urban areas we use the following script:
   
-`urban_avg_fare_per_driver = urban_cities_df.groupby(["city"]).sum()["fare"]/urban_cities_df.groupby(["city"]).sum()["driver_count"]`
+>`urban_avg_fare_per_driver = urban_cities_df.groupby(["city"]).sum()["fare"]/urban_cities_df.groupby(["city"]).sum()["driver_count"]`
   
   Once these calculations have been completed by type of city, we can then combine all the statistics back into one dataframe to show the summary to the PyBer executives.  The final result is as follows:
   
@@ -22,3 +22,13 @@ The two data files are first combined into one dataframe with the merge variable
 This table shows that there are significantly fewer rides and drivers in the Rural areas bu thte average fare per ride and fare per Driver is significantly higher than in the Suburban and Urban settings.  However, the urban area has much higher revenue due to these significantly higher number of rides provided.  We can examine the monthly revenue stream broken down by the city types in the following graph:
 
 ![](https://github.com/xactuary/Py_ber-Analysis/blob/main/analysis/Fig11.png)
+  
+The code used to create the graph includes some adjustments to the default style legend in order to fit it on the graph.  The following is the code used to create this depiction.
+
+>'ax = Week_fare_df.plot(figsize=(15,5))`  
+`ax.set_title("Total Fare by City Type")`  
+`ax.set_ylabel('Fare($USD)')`  
+`ax.set_xlabel('Date')`  
+`ax.legend(loc='center',fontsize='small')`  
+
+
