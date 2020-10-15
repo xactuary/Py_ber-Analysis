@@ -25,10 +25,10 @@ This table shows that there are significantly fewer rides and drivers in the Rur
   
 The code used to create the graph includes some adjustments to the default style legend in order to fit it on the graph.  The following is the code used to create this depiction.
 
->'ax = Week_fare_df.plot(figsize=(15,5))`  
-`ax.set_title("Total Fare by City Type")`  
-`ax.set_ylabel('Fare($USD)')`  
-`ax.set_xlabel('Date')`  
-`ax.legend(loc='center',fontsize='small')`  
+>'ax = Week_fare_df.plot(figsize=(15,5))
+>ax.set_title("Total Fare by City Type")
+>ax.set_ylabel('Fare($USD)')
+>ax.set_xlabel('Date')
+>ax.legend(loc='center',fontsize='small')`  
 
 
